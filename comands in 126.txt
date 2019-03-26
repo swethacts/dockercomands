@@ -35,3 +35,12 @@ Kill all extied containers and unwanted images
 ---------------------------------------------------
 
 docker system prune
+
+docker command for space issue Hyper-v
+---------------------------------------------------
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+
+after this command run below command 
+
+• Reboot, then enable the containers feature.
+Enable-WindowsOptionalFeature -Online -FeatureName Containers -All
