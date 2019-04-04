@@ -1,0 +1,23 @@
+Whenever Ubuntu machines are restarted dcker containers need to be restarted below are details:
+10.120.100.31
+To restart Jenkins :
+
+docker run -u root -d -p 8080:8080 -p 50000:50000 -v jenkins-data:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
+
+docker ps - 
+Jenkins Container Id : 7c0143a30f3c
+
+If we know the container id/name we can restart using 
+docker restart 7c0143a30f3c
+
+10.120.100.30
+To restart Sonarqube :
+
+Sonarqube created using :
+docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 org.sonarsource.owasp/sonar-zap-plugin:1.1.3-SNAPSHOT
+
+Sonarqube container id : 194427f0f2c9
+
+here --name is given so we can restart container using below command :
+docker restart sonarqube
+
