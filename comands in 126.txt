@@ -18,6 +18,13 @@ docker run -dit --env-file jira-env-file -p 8788:8788 devopsbasservice/onbotfram
 docker run -d --name "jirabot" -e HUBOT_SLACK_TOKEN=xoxb-555685734404-585039739682-ubcn3uT0Qsn9v9yoQADyQ5G3  -e HUBOT_JIRA_URL=http://192.168.40.202:8009  -e HUBOT_JIRA_USER=swethareddy.baikadi  -e HUBOT_JIRA_PASSWORD=feb@2019 -v /path/to/hubot/volume:/home/hubot/scripts devopsbasservice/onbotframework:slack-jirabot-ubuntu-v1
 
 
+
+
+ALM
+-----------------
+docker run -d --name "almbot" -e HUBOT_SLACK_TOKEN=xoxb-555685734404-598061393639-QIjt2Dl4DoFE28JawJ42gPSu  -e HUBOT_ALM_URL=http://ctsintbmvhpalm:8080/qcbin/  -e HUBOT_ALM_USER=312356  -e HUBOT_ALM_PASSWORD=k -v /path/to/hubot/volume:/home/hubot/scripts mnpk/hubot-slack
+
+
 Kill docker container
 -----------------------------
 
