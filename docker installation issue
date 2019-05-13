@@ -1,0 +1,17 @@
+Suggestions to try:
+
+Option #1:
+I opened a PowerShell prompt as Administrator and entered the following command.
+bcdedit /set hypervisorlaunchtype Auto
+After restarting Windows I was finally able to launch Docker successfully.
+
+Option #2:
+Resolved by running the following PowerShell script to enable nested virtualization (only Windows Server 2016).
+Run the following PowerShell commands from outside the Hyper-V Host of the Hyper-V Guest. i.e (Windows 10 Enterprise > Hyper-V running Windows Server 2016 Eval > Hyper-V to run MobyLinuxVM) so run the powershell script from the very lower layer in this case Windows 10.
+#The first command will download the powershell script file "Enable-NestedVm.ps1"
+Invoke-WebRequest https://raw.githubusercontent.com/Microsoft/Virtualization-Documentation/master/hyperv-tools/Nested/Enable-NestedVm.ps1 -OutFile ~/Enable-NestedVm.ps1
+#The second command will execute the actual script. Replace "VmName" with the proper VM name running in the Hyper-V host. Follow the prompts on the PowerShell screen with Y/N to enable MAC spoofing and other options that may come up as needed.
+~/Enable-NestedVm.ps1 -VmName "VmName"
+You may need to restart the Hyper-V host VM and the MobyLimuxVM should run fine in the Hyper-V guest. Of course if you click the "switch to Windows Containers" from the Docker system tray the error for MobyLinuxVM will be gone. That is not a fix though as the MobyLinuxVM is needed for Linux Containers if that`s what you are going after.
+More details on the powershell script that enable the new nested virtualization technology that is only built in Windows Server 2016.
+https://www.thomasmaurer.ch/2015/10/hyper-v-nested-virtualization-in-windows-10-build-10565/
