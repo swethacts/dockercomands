@@ -1,0 +1,19 @@
+Jenkins installation steps: https://jenkins.io/doc/book/installing/#/docker
+Commands to use: https://hub.docker.com/r/jenkinsci/blueocean/
+1) Pull Jenkins image in to Local Repository using "docker pull jenkinsci/blueocean"
+2) To Check the images present in local repository "docker images"
+3) Create Jenkins as a docker container 
+working : "docker run -p 9000:8080  jenkinsci/blueocean "
+Working in Ubuntu m/c : 
+docker run  -u root  --rm  -d  -p 8080:8080 -p 50000:50000  -v jenkins-data:/var/jenkins_home  -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
+docker exec 03f2caf2bb9f cat var/jenkins_home/secrets/initialAdminPassword
+system port : 9000
+Container port : 8080
+http://localhost:9000 
+After launch it will ask for the password which can be retrieved from command prompt.
+Select "Suggested plugins" option
+Create First Admin user using :
+username : admin, password : admin Name : Admin, email: nayana.cv@cognizant.com
+Launch : http://localhost:9000/
+4) To check the docker container "docker ps"
+5) To kill the container "docker kill %ContainerID%"
