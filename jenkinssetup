@@ -1,0 +1,24 @@
+Jenkins setup using Docker
+docker run  -u root  --rm  -d  -p 9090:8080 -p 50000:50000  -v jenkins-data:/var/jenkins_home  -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean 
+
+docker exec 5551c6d022d2  cat /var/jenkins_home/secrets/initialAdminPassword
+
+Jira using Jenkins
+docker run --detach --publish 8008:8080  --volume "hostpath:/var/atlassian/jira"  cptactionhank/atlassian-jira:latest
+
+jenkinsbot install using docker and env file
+--------------------------------------------------
+docker run -dit --env-file jenkins-env-file -p 8787:8787 devopsbasservice/onbotframework:slack-jenkinsbot-ubuntu-v1
+
+cognizant
+cognizant-xe42741.slack.com
+
+slack xoxb-636266095954-647707786053-9jlywlhUqW8PyGispwGOnxc6
+
+Jenkins api token 11000d7f9f6bc35fa8e8a14ad6f1b0bdc7
+
+1.	Log in to Jenkins.
+2.	Click your name (upper-right corner).
+3.	Click Configure (left-side menu).
+4.	Click Show API Token.
+
