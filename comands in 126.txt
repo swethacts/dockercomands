@@ -53,3 +53,7 @@ after this command run below command
 
 • Reboot, then enable the containers feature.
 Enable-WindowsOptionalFeature -Online -FeatureName Containers -All
+
+
+
+https://medium.com/@eng.mohamed.m.saeed/monitoring-jenkins-with-grafana-and-prometheus-a7e037cbb376
