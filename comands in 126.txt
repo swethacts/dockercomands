@@ -63,3 +63,6 @@ https://medium.com/@eng.mohamed.m.saeed/monitoring-jenkins-with-grafana-and-prom
 5
 
 docker exec <container_name> cat /var/jenkins_home/secrets/initialAdminPassword
+
+
+https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-using-docker-on-ubuntu-14-04
