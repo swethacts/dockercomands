@@ -66,3 +66,7 @@ docker exec <container_name> cat /var/jenkins_home/secrets/initialAdminPassword
 
 
 https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-using-docker-on-ubuntu-14-04
+
+to delete alla volumes
+-------------------------
+docker system prune --all --force --volumes
