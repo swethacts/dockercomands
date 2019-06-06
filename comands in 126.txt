@@ -76,3 +76,4 @@ https://github.com/MicroFocus/alm-octane-js-rest-sdk
 docker run -p 9099:9090 -v /prometheus-data/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
 
 https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-using-docker-on-ubuntu-14-04
+https://github.com/prometheus/prometheus/blob/master/documentation/examples/prometheus.yml
