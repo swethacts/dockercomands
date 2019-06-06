@@ -72,3 +72,5 @@ to delete alla volumes
 docker system prune --all --force --volumes
 -------------------------------------------
 https://github.com/MicroFocus/alm-octane-js-rest-sdk
+
+docker run -p 9099:9090 -v /prometheus-data/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
