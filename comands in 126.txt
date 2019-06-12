@@ -79,3 +79,5 @@ https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-using
 https://github.com/prometheus/prometheus/blob/master/documentation/examples/prometheus.yml
 
 https://docs.docker.com/samples/library/influxdb/ 
+
+https://softwaretester.info/jenkins-influxdb-and-grafana/
