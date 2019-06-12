@@ -77,3 +77,5 @@ docker run -p 9099:9090 -v /prometheus-data/prometheus.yml:/etc/prometheus/prome
 
 https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-using-docker-on-ubuntu-14-04
 https://github.com/prometheus/prometheus/blob/master/documentation/examples/prometheus.yml
+
+https://docs.docker.com/samples/library/influxdb/ 
