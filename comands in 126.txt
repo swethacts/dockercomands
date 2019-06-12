@@ -81,3 +81,4 @@ https://github.com/prometheus/prometheus/blob/master/documentation/examples/prom
 https://docs.docker.com/samples/library/influxdb/ 
 
 https://softwaretester.info/jenkins-influxdb-and-grafana/
+https://piotrminkowski.wordpress.com/2017/08/29/visualizing-jenkins-pipeline-results-in-grafana/
