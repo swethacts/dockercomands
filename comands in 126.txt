@@ -83,3 +83,4 @@ https://docs.docker.com/samples/library/influxdb/
 https://softwaretester.info/jenkins-influxdb-and-grafana/
 https://piotrminkowski.wordpress.com/2017/08/29/visualizing-jenkins-pipeline-results-in-grafana/
 https://hub.docker.com/_/influxdb
+https://coderwall.com/p/fg18jq/getting-started-influxdb-grafana-docker
