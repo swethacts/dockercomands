@@ -1,1 +1,7 @@
 https://www.bogotobogo.com/DevOps/Jenkins/Jenkins_GitHub_Java_Application_Project_Build_Configuration_Maven.php
+<!--influxdb -->
+		<dependency>
+			<groupId>org.influxdb</groupId>
+			<artifactId>influxdb-java</artifactId>
+			<version>2.7</version>
+		</dependency><!--influxdb -->
