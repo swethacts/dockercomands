@@ -10,3 +10,6 @@ Services:
 https://stackoverflow.com/questions/49088327/running-a-local-kibana-in-a-container
 
 https://www.elastic.co/guide/en/kibana/current/docker.html
+
+
+sudo docker run -d -p 5601:5601 --net=host -e "ELASTICSEARCH_URL=https://localhost:9200" --name kibana kibana:latest 
