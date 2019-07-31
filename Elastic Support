@@ -1,1 +1,8 @@
 https://dzone.com/articles/putting-jenkins-build-logs-into-elk-stack-filebeat
+vertion: "3.1"
+Services:
+ Logstash:
+ image: logstash:2
+ volumes:
+        - ./:/config
+		command: logstash -f /config/logstash.conf
