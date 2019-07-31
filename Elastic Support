@@ -6,3 +6,7 @@ Services:
  volumes:
         - ./:/config
 		command: logstash -f /config/logstash.conf
+		
+https://stackoverflow.com/questions/49088327/running-a-local-kibana-in-a-container
+
+https://www.elastic.co/guide/en/kibana/current/docker.html
