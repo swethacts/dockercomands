@@ -1,0 +1,57 @@
+Hi Swetha,
+   Please create POST Method request in ReadyAPI and check the following :
+
+Thanks,
+Nishanta
+
+From: Chattopadhyay, Ritwick <rchattopadhyay@mgmresorts.com> 
+Sent: Thursday, August 1, 2019 11:00 AM
+To: Sengupta, Souradeep (Cognizant) <Souradeep.Sengupta@cognizant.com>; Equbal, Asif <aequbal@mgmresorts.com>; Chattopadhyay, Subhendu <schattopad@mgmresorts.com>; Shankar, Ravi (Cognizant) <Ravi.Shankar7@cognizant.com>; Akabari, Mahendrakumar <maakabari@mgmresorts.com>; Equbal, Asif (Cognizant) <Asif.Equbal@cognizant.com>; Chattopadhyay, Ritwick <rchattopadhyay@mgmresorts.com>; Nanda, Nishanta (Cognizant) <Nishanta.Nanda@cognizant.com>
+Subject: Discussion on RMS Queries
+
+[External]
+https://revenue-management-interface.azurewebsites.net/api/notify
+ 
+ 
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<s:Header>
+<Action xmlns="http://www.w3.org/2005/08/addressing">OTA_HotelRatePlanNotifRQ</Action>
+<MessageID xmlns="http://www.w3.org/2005/08/addressing">6f9ca15eb9ce4a32a1e6af24942c51ed</MessageID>
+<To xmlns="http://www.w3.org/2005/08/addressing"><![CDATA[https://Auroraws.mgmresorts.com:443/rmbs/notif]]></To>
+<ReplyTo xmlns="http://www.w3.org/2005/08/addressing">
+<Address><![CDATA[http://www.w3.org/2005/08/addressing/anonymous]]></Address>
+</ReplyTo>
+<Security xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+<UsernameToken>
+<Username>someuser</Username>
+<Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">somepassword</Password>
+</UsernameToken>
+</Security>
+</s:Header>
+<s:Body>
+<OTA_HotelRatePlanNotifRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" EchoToken="6f9ca15eb9ce4a32a1e6af24942c51ed" TimeStamp="2019-06-06T09:27:03" Version="6.000" TransactionIdentifier="6f9ca15eb9ce4a32a1e6af24942c51ed" MessageContentCode="8" xmlns="http://www.opentravel.org/OTA/2003/05">
+<RatePlans HotelCode="e2704b04-d515-45b0-8afd-4fa1424ff0a8">
+<RatePlan Start="2000-01-01" End="2100-12-31" CurrencyCode="USD" RatePlanCode="DPRPO" RatePlanNotifType="Delta" MarketCode="03_2000+">
+<Rates>
+<Rate RateTimeUnit="Day" UnitMultiplier="1" Start="2019-08-07" End="2019-08-07" Mon="true" Tue="true" Weds="true" Thur="true" Fri="true" Sat="true" Sun="true" CurrencyCode="USD" InvTypeCode="DCCQ">
+<BaseByGuestAmts>
+<BaseByGuestAmt AmountBeforeTax="119.0000" NumberOfGuests="1" AgeQualifyingCode="10" />
+<BaseByGuestAmt AmountBeforeTax="119.0000" NumberOfGuests="2" AgeQualifyingCode="10" />
+</BaseByGuestAmts>
+<AdditionalGuestAmounts>
+<AdditionalGuestAmount AgeQualifyingCode="10" Amount="40.0000" />
+<AdditionalGuestAmount AgeQualifyingCode="10" Amount="40.0000" />
+</AdditionalGuestAmounts>
+</Rate>
+</Rates>
+<UniqueID Type="16" ID="10" />
+</RatePlan>
+</RatePlans>
+</OTA_HotelRatePlanNotifRQ>
+</s:Body>
+</s:Envelope>
+
+Thanks,
+Ritwick Chattopadhyay
++1.702.972.7367
+
