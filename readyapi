@@ -55,3 +55,13 @@ Thanks,
 Ritwick Chattopadhyay
 +1.702.972.7367
 
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+   <SOAP-ENV:Header>
+      <wsa:To>http://www.w3.org/2005/08/addressing/role/anonymous</wsa:To>
+      <wsa:MessageID>6f9ca15eb9ce4a32a1e6af24942c51ed</wsa:MessageID>
+      <wsa:RelatesTo>5ea87975-021a-46ed-b1e8-35398190612c</wsa:RelatesTo>
+      <wsa:Action>http://htng.org/2014B/HTNG_ARIAndReservationPush#OTA_HotelResNotifRQ</wsa:Action>
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body/>
+</SOAP-ENV:Envelope>
